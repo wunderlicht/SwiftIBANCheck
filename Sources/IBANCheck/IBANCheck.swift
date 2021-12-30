@@ -78,6 +78,10 @@ final class IBANChecks {
         return result //we are here so everything is ok
     }
     
+    /// mod: returns the symmetric modulo of a string representation of a bignum
+    /// - Parameter bignum: a string containing digits
+    /// - Parameter div: dividend
+    /// - Returns:bignum % dividend 
     class func mod(bignum: String, div: Int) -> Int {
         guard div > 0 else {
             return -1 //only works for dividends greater than 0
